@@ -1,0 +1,25 @@
+body {
+    font-family: Montserrat;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.header-card {
+    height: 500px;
+    background-image: url("./img/headerImg.jpg");
+    background-size: cover;
+    height: 80vh;
+}
+
+#start {
+    background-image: url("./img/start.jpeg");
+    background-size: cover;
+    background-position: top;
+    padding: 40px;
+}
+
+.image{
+    width: 150px;
+}
