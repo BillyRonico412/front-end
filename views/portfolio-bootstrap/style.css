@@ -1,0 +1,23 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#acceuil{
+    /* margin-top: 56px; */
+    padding: 50px 20px;
+}
+
+.carte-portfolio {
+    box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.4s all;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.carte-portfolio:hover{
+    position: relative;
+    top: 3px;
+    left: 5px;
+    cursor: pointer;
+}
