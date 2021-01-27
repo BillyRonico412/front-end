@@ -1,0 +1,22 @@
+body {
+    background-color: #3772FF;
+}
+
+#app {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    font-size: 10vw;
+    color: white;
+    font-family: 'Squada One', cursive;
+}
+
+.deux-points {
+    width: 5%;
+}
+
+.case-utile {
+    width: 30%;
+}
