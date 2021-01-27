@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz JS</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,600;1,400&display=swap');
+    </style>
+</head>
+
+<body class="text-white">
+
+    <div id="app">
+
+        <h1 class="text-center my-2">Quiz Culture Générale</h1>
+
+        <section class="container">
+
+            <quiz v-for="(quiz, index) in listQuiz" :question="quiz.question" :reponses="quiz.reponses"
+                :index-rep="quiz.indexRep" :key="'quiz' + index" :index-quiz="index"
+                :class="[index % 2 === 0 ? 'carte-quiz-1' : 'carte-quiz-2']" @choix="choix">
+            </quiz>
+
+        </section>
+
+
+        <div class="text-center">
+            <button class="btn text-white fs-3 px-5 py-3 fw-bold btn-valider mb-3" @click="valideResultat">Valider mes
+                choix</button>
+        </div>
+
+        <transition name="resultat">
+            <div id="affiche-resultat" v-if="afficheTextResultat"class="container rounded text-center text-dark my-3 carte-quiz-faux">
+                <div class="fs-3 py-2 fw-bold"> {{ textResultat }} </div>
+                <div class="fs-4 fw-bold fst-italic" v-if="note !== '5/5'">Rententez une autre reponse dans les cases rouges, puis re-validez !</div>
+                <div class="fs-3 py-2 fw-bold"> {{ note }} </div>
+            </div>
+        </transition>
+
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

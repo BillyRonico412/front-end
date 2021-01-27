@@ -1,0 +1,64 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Josefin Sans';
+    background-color: #1C3144;
+}
+
+.carte-quiz-1 {
+    background-color: hsl(71, 13%, 83%);
+}
+
+.carte-quiz-2 {
+    background-color: hsl(71, 30%, 83%);
+}
+
+.reponse {
+    background-color: hsl(220, 50%, 42%);
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.reponse:hover {
+    background-color: hsl(220, 50%, 47%);
+}
+
+.reponse-choisi {
+    background-color: hsl(1, 97%, 38%);
+}
+
+.reponse-choisi:hover {
+    background-color: hsl(1, 97%, 43%);
+}
+
+.btn-valider {
+    background-color: hsl(126, 72%, 29%)
+}
+
+.carte-quiz {
+    box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.2);
+    position: relative;
+}
+
+#affiche-resultat{
+    background-color: hsl(71, 13%, 83%);
+}
+
+.carte-quiz-faux {
+    animation-duration: 3s;
+    animation-name: moov;
+}
+
+@keyframes moov {
+    from {
+        left: 0px
+    }
+
+    to {
+        left: 10px
+    }
+}
