@@ -21,7 +21,7 @@ let vm = new Vue({
             this.heure = now.getHours()
             this.minute = now.getMinutes()
             this.seconde = now.getSeconds()
-        })
+        }, 120000)
 
         setInterval(() => {
             this.seconde++
