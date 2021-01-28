@@ -15,6 +15,14 @@ let vm = new Vue({
         this.heure = now.getHours()
         this.minute = now.getMinutes()
         this.seconde = now.getSeconds()
+
+        setInterval(() => {
+            let now = new Date()
+            this.heure = now.getHours()
+            this.minute = now.getMinutes()
+            this.seconde = now.getSeconds()
+        })
+
         setInterval(() => {
             this.seconde++
             if (this.seconde === 60) {
@@ -23,7 +31,7 @@ let vm = new Vue({
                 if (this.minute === 60) {
                     this.heure++
                     this.minute = 0
-                    if (this.heure === 24) 
+                    if (this.heure === 24)
                         this.heure = 0
                 }
             }
