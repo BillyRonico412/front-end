@@ -14,10 +14,3 @@ body {
     top: 0px;
     left: 0px;
 }
-
-.carte-portfolio:hover{
-    position: relative;
-    top: 3px;
-    left: 5px;
-    cursor: pointer;
-}
