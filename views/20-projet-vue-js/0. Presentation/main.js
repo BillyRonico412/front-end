@@ -19,7 +19,7 @@ const listProjet = [
 
 const projet = {
     template: `
-    <div class="col-xl-3 col-lg-4 col-md-6 my-4">
+    <div class="col-xl-4 col-lg-6 my-4">
         <div class="card carte-portfolio">
             <img :src="lienImage" style="width: 100%;" class="card-img-top bg-light p-3">
             <hr>
