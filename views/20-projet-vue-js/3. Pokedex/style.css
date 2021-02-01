@@ -5,6 +5,22 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #333;
+    font-family: 'Righteous', cursive;
+    background: #051923;
+}
+
+h1 {
+    /* font-family: 'Josefin Sans', sans-serif; */
+    font-family: 'Righteous', cursive;
+}
+
+.carte-pokemon {
+
+}
+
+.carte-pokemon img {
+}
+
+.cherche-move {
+    transition: 1s all;
 }
