@@ -66,14 +66,16 @@ const vm = new Vue({
     created() {
         (async () => {
             let allPokemons = await getAllPokemons()
-            console.log(allPokemons)
             allPokemons.forEach(async pokemonData => {
-                let pokemonInfo = await getInfoPokemon(pokemonData.url)
-                this.pokemons.push({
-                    nom: await getNameFrPokemon(pokemonInfo.name),
-                    image: pokemonInfo.sprites.front_default,
-                    type: pokemonInfo.types[0].type.name
-                })
+                let pokemonInfo = await getInfoPokemon(pokemonData.url);
+                (async () => {
+                    this.pokemons.push({
+                        nom: await getNameFrPokemon(pokemonInfo.name),
+                        image: pokemonInfo.sprites.front_default,
+                        type: pokemonInfo.types[0].type.name
+                    })
+                })()
+                
                 setTimeout(() => this.finChargement = true, 5000)  
             })
         })()
