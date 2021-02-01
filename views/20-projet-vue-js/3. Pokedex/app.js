@@ -74,7 +74,7 @@ const vm = new Vue({
                     image: pokemonInfo.sprites.front_default,
                     type: pokemonInfo.types[0].type.name
                 })
-                setTimeout(() => this.finChargement = true, 3000)  
+                setTimeout(() => this.finChargement = true, 5000)  
             })
         })()
     },
