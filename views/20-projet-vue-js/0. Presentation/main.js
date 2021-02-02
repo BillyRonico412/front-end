@@ -14,11 +14,6 @@ const listProjet = [
         lienCode: 'https://github.com/BillyRonico412/front-end/tree/main/views/20-projet-vue-js/22.%20NombreAleatoire',
         lienProjet: 'http://billy-ronico.ovh:8080/front-end/20-projet-vue-js/22.%20NombreAleatoire/',
         lienImage: './images/aleatoire.png'
-    }, {
-        nom: 'Pokedex',
-        lienCode: 'https://github.com/BillyRonico412/front-end/tree/main/views/20-projet-vue-js/3.%20Pokedex',
-        lienProjet: 'http://billy-ronico.ovh:8080/front-end/20-projet-vue-js/3.%20Pokedex/',
-        lienImage: './images/pokemon.png'
     }
 ]
 
