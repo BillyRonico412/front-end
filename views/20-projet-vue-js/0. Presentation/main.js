@@ -14,6 +14,11 @@ const listProjet = [
         lienCode: 'https://github.com/BillyRonico412/front-end/tree/main/views/20-projet-vue-js/22.%20NombreAleatoire',
         lienProjet: 'http://billy-ronico.ovh:8080/front-end/20-projet-vue-js/22.%20NombreAleatoire/',
         lienImage: './images/aleatoire.png'
+    }, {
+        nom: 'Cesar',
+        lienCode: 'https://github.com/BillyRonico412/front-end/tree/main/views/20-projet-vue-js/23.%20Cesar',
+        lienProjet: 'http://billy-ronico.ovh:8080/front-end/20-projet-vue-js/23.%20Cesar/',
+        lienImage: './images/cesar.png'
     }
 ]
 
